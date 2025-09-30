@@ -22,7 +22,6 @@ public class Registro extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new BorderLayout(10, 10));
 
-        // Configuração da ComboBox: Contém as classes Astronauta, Navio e Onda
         JPanel painelTopo = new JPanel(new FlowLayout(FlowLayout.CENTER));
         String[] nomesClasses = {"Onda", "Navio", "Astronauta"};
 
@@ -58,7 +57,6 @@ public class Registro extends JFrame {
     }
 
     private void configurarPainelEntrada(){
-        // Configura a lógica de campos para as 3 classes
 
         String[] atributosOnda={"Comprimento (int)","Largura (int)","Velocidade (int)"};
         camposPorClasse.put("Onda", criarCampos("Onda",atributosOnda));
